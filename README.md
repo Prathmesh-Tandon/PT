@@ -12,4 +12,8 @@
           step 4: main.elf has binary code + some meta data for gdb, so strip away meta data and just have raw binary ( only instructions) objcopy will convert main.elf to bianry format, then create bin file (main.bin). now instruction can be seen in encoder/decoder by giving the instruction.
 
           step 5: download gdb tool ,do the automation to convert text to binary using commands directly using MAKEFILE.
+          
+          step 6: do startqemu and connectgdb using make cmd.
+
+          
 
