@@ -1,3 +1,4 @@
 _start:
-    j _start
+    j piyush
+j .
     

@@ -28,4 +28,13 @@
 
         step 4: close qemu ( ctrl+a followed by x), close gdb (q), make print binary to see all 6 instructions, one can verify it in encoder/decoder also.  
 
+###project_4:
+        take C program to assembly and relation
+
+        step 1: create c file ( c-asm.c) where it function is created which return int value.
+
+        step 2: generate assembly file for c ( give make assembly file ), so we are stopping at assembly generation before completing compiling part, c-asm.s will be generated, where we see directives, labels, instructions.
+
+        step 3: update m.s assembly file , where we are calling piyush function which is created in c-asm.c file, compile it , load qemu and connect gdb. 
+
 
