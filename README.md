@@ -19,6 +19,13 @@
 
 ###Project_3:
         assembly program, writing code , debugging in GDB
+
+        step 1: create m_2.s ( assembly file), after start label, give instructions, x3=x3+x1 upto x2 times,
         
+        step 2: make compile to create elf, start qemu and connect gdb , all using make automation
+
+        step 3: in gdb, it will show all 32 bit GPRs as per riscv card , values getting stored.
+
+        step 4: close qemu ( ctrl+a followed by x), close gdb (q), make print binary to see all 6 instructions, one can verify it in encoder/decoder also.  
 
 
