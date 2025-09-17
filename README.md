@@ -29,7 +29,7 @@
         step 4: close qemu ( ctrl+a followed by x), close gdb (q), make print binary to see all 6 instructions, one can verify it in encoder/decoder also.  
 
 ###project_4:
-        take C program to assembly and relation
+        take C program to assembly and relation ( assembly to object to binary)
 
         step 1: create c file ( c-asm.c) where it function is created which return int value.
 
