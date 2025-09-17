@@ -1,4 +1,5 @@
 # PT
+### GIT commands: after any insertion use git commit -a , git add, then git push to update the changes in git repo.
 ###Project_1: 
         to understand high level view of function, struct, pointer
         
@@ -31,10 +32,13 @@
 ###project_4:
         take C program to assembly and relation ( assembly to object to binary)
 
-        step 1: create c file ( c-asm.c) where it function is created which return int value.
+        step 1: create c file ( c-asm_1.c) where the function is created which return int value.
 
-        step 2: generate assembly file for c ( give make assembly file ), so we are stopping at assembly generation before completing compiling part, c-asm.s will be generated, where we see directives, labels, instructions.
+        step 2: generate assembly file for c file created in step 1 above ( give make assembly file ), so through gcc, we are stopping at assembly generation before completing compiling part, c-asm_1.s will be generated, where we see directives (starts with dot (.) means hints/commands for assembler), labels, instructions.
 
-        step 3: update m.s assembly file , where we are calling piyush function which is created in c-asm.c file, compile it , load qemu and connect gdb. 
+        step 3: update m.s assembly file , where we are calling piyush function which is created in c-asm_1.c file, compile it , load qemu and connect gdb. 
+                note: function requires stack, hence assign address to stack pointer also in m_1.s, that is mention in next step
 
+        step 4: load the stack pointer register with reasonable value that can be reachable by CPU, and return function using jal (jump and link), make sure to use si instead of ni to jump inside c-asm_1.c instructions in gdb. 
+                make piyush -> make startqemu -> make connectgdb
 
