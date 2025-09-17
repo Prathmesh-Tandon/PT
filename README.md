@@ -1,5 +1,5 @@
 # PT
-### GIT commands: after any insertion use git commit -a , git add, then git push to update the changes in git repo.
+### GIT commands: after any insertion use git commit -a , git add to add any file created, then git push to update the changes in git repo. git status to check nothing to commit.
 ###Project_1: 
         to understand high level view of function, struct, pointer
         
