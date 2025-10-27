@@ -1,10 +1,40 @@
 # PT
-### GIT commands: after any insertion use git commit -a , git add to add any file created, then git push to update the changes in git repo. git status to check nothing to commit.
-###Project_1: 
-        to understand high level view of function, struct, pointer
+
+### Toolchain
+
+Execute the following commands to install the toolchain, QEMU and GDB
+
+```bash
+sudo apt update -y
+sudo apt install -y gcc-riscv64-unknown-elf qemu-system-misc gdb-multiarch
+```
+
+### RISC-V Reference Card
+
+Details of the RISC-V 32i Instruction Encoding: [Download the PDF](https://github.com/jameslzhu/riscv-card/releases/download/latest/riscv-card.pdf)
+
+### Tools
+1. [RISC-V Instruction Decoder](https://luplab.gitlab.io/rvcodecjs/)
+1. [GDB Dashboard](https://github.com/cyrus-and/gdb-dashboard)
+1. [Assembler (as) Documentation](https://ftp.gnu.org/old-gnu/Manuals/gas/html_chapter/as_7.html)
+    1. [Document for RISC-V Assembler](https://sourceware.org/binutils/docs-2.31/as/RISC_002dV_002dDirectives.html)
+
+### C
+1. [ISO Standard](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf)
+2. [GNU C Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf)
+
+### GIT commands
+ step 1: After any insertion or any changes -> use git commit -a 
+ step 2: To add any file created -> git add
+ step 3: To update the changes in git repo -> git push  
+ step 4 :To check nothing to commit, working tree clean -> git status.
+
+
+### Project_1 
+1. To understand high level view of function, struct, pointer
         
-###Project_2: 
-        to understand asm to bin via qemu and gdb 
+### Project_2: 
+1. To understand asm to bin via qemu and gdb 
           
           step 1: take assembly code (m.s) , internally linker assigned address to each instruction written in assembly (m.ld) and convert into binary (main.elf).
 
@@ -18,7 +48,7 @@
           
           step 6: do startqemu and connectgdb using make cmd.
 
-###Project_3:
+### Project_3:
         assembly program, writing code , debugging in GDB
 
         step 1: create m_2.s ( assembly file), after start label, give instructions, x3=x3+x1 upto x2 times,
@@ -29,7 +59,7 @@
 
         step 4: close qemu ( ctrl+a followed by x), close gdb (q), make print binary to see all 6 instructions, one can verify it in encoder/decoder also.  
 
-###project_4:
+### project_4:
         take C program to assembly and relation ( assembly to object to binary)
 
         step 1: create c file ( c-asm_1.c) where the function is created which return int value.
