@@ -24,9 +24,9 @@ Details of the RISC-V 32i Instruction Encoding: [Download the PDF](https://githu
 2. [GNU C Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf)
 
 ### GIT commands
- step 1: After any insertion or any changes -> use git commit -a 
- step 2: To add any file created -> git add
- step 3: To update the changes in git repo -> git push  
+ step 1: After any insertion or any changes -> use git commit -a. 
+ step 2: To add any file created -> git add.
+ step 3: To update the changes in git repo -> git push.  
  step 4 :To check nothing to commit, working tree clean -> git status.
 
 
