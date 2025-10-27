@@ -34,7 +34,9 @@ Details of the RISC-V 32i Instruction Encoding: [Download the PDF](https://githu
 
 
 ### Project_1 
-1. To understand high level view of function, struct, pointer
+1. To understand high level view of function, struct, pointer.
+
+2. Run a c program use -> gcc file.c then ./a.out
         
 ### Project_2: 
 1. To understand asm to bin via qemu and gdb 
