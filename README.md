@@ -24,6 +24,9 @@ Details of the RISC-V 32i Instruction Encoding: [Download the PDF](https://githu
 2. [GNU C Manual](https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf)
 
 ### GIT commands
+
+basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
+ 
  step 1: After any insertion or any changes -> use git commit -a. 
 
  step 2: To add any file created -> git add.
