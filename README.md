@@ -47,7 +47,8 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 
           step 2: load binary in qemu.through tunnel port 1234. ( to exit : ctrl+a then release followed by x). [make startqemu]
 
-          step 3: using info reg in gdb, we can look inside state of cpu i.e program counter, all registers etc. [make connectgdb]
+          step 3: using info reg in gdb, we can look inside state of cpu i.e program counter, all registers etc. [make connectgdb] 
+          note: download gdb dashboard if its not coming, link is in tools section
 
           step 4: main.elf has binary code + some meta data for gdb, so strip away meta data and just have raw binary ( only instructions) objcopy will convert main.elf to bianry format, then create bin file (main.bin). now instruction can be seen in encoder/decoder by giving the instruction. [part of maike binary only, then make printbinary to see instructions]
 
