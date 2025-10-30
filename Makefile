@@ -1,4 +1,4 @@
-piyush: c-asm_1.c m_1.s
+binary: c-asm_1.c m_1.s
 	riscv64-unknown-elf-gcc -g -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_1.s c-asm_1.c -o main.elf
 	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 

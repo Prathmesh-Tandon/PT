@@ -43,13 +43,13 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
         
 ### Project_2: To understand asm to bin via qemu and gdb 
           
-          step 1: take assembly code (m.s) , internally linker assigned address to each instruction written in assembly (m.ld) and convert into binary (main.elf).
+          step 1: take assembly code (m.s) , internally linker assigned address to each instruction written in assembly (m.ld) and convert into binary (main.elf). [make binary]
 
-          step 2: load binary in qemu.through tunnel port 1234. ( to exit : ctrl+a then release followed by x).
+          step 2: load binary in qemu.through tunnel port 1234. ( to exit : ctrl+a then release followed by x). [make startqemu]
 
-          step 3: using gdb looked inside state of cpu via gdb.
+          step 3: using info reg in gdb, we can look inside state of cpu i.e program counter, all registers etc. [make connectgdb]
 
-          step 4: main.elf has binary code + some meta data for gdb, so strip away meta data and just have raw binary ( only instructions) objcopy will convert main.elf to bianry format, then create bin file (main.bin). now instruction can be seen in encoder/decoder by giving the instruction.
+          step 4: main.elf has binary code + some meta data for gdb, so strip away meta data and just have raw binary ( only instructions) objcopy will convert main.elf to bianry format, then create bin file (main.bin). now instruction can be seen in encoder/decoder by giving the instruction. [part of maike binary only, then make printbinary to see instructions]
 
           step 5: download gdb tool ,do the automation to convert text to binary using commands directly using MAKEFILE.
           
