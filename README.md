@@ -26,7 +26,7 @@ Details of the RISC-V 32i Instruction Encoding: [Download the PDF](https://githu
 ### GIT commands
 
 basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
- 
+
  step 1: After any insertion or any changes -> use git commit -a. 
 
  step 2: To add any file created -> git add.
@@ -36,13 +36,12 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
  step 4 :To check nothing to commit, working tree clean -> git status.
 
 
-### Project_1 
+### project_1.c 
 1. To understand high level view of function, struct, pointer.
 
 2. Run a c program use -> gcc file.c then ./a.out
         
-### Project_2: 
-1. To understand asm to bin via qemu and gdb 
+### Project_2: To understand asm to bin via qemu and gdb 
           
           step 1: take assembly code (m.s) , internally linker assigned address to each instruction written in assembly (m.ld) and convert into binary (main.elf).
 
