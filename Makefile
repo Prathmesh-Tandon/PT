@@ -1,12 +1,14 @@
-binary: c-asm_1.c m_1.s
-	riscv64-unknown-elf-gcc -g -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_1.s c-asm_1.c -o main.elf
+Project2: m_2.s
+	riscv64-unknown-elf-gcc -g -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_2.s -o main.elf
 	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 
-assembly: c-asm_1.c
-	riscv64-unknown-elf-gcc -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld c-asm_1.c -S
+Project3: m_3.s m.ld 
+	riscv64-unknown-elf-gcc -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_3.s -o main.elf
+	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 
-compile: m.s m.ld 
-	riscv64-unknown-elf-gcc -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_2.s -o main.elf
+Project4: c-asm_4.c m_4.s
+	riscv64-unknown-elf-gcc -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld c-asm_4.c -S
+	riscv64-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_4.s c-asm_4.c -o main.elf
 	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 
 printbinary: main.bin
@@ -19,4 +21,4 @@ connectgdb: main.elf
 	gdb-multiarch main.elf -ex "target remote localhost:1234" -ex "break _start" -ex "continue" -q
 
 clean:
-	rm -rf *.out *.bin *.elf 
+	rm -rf *.out *.bin *.elf *.bmp
