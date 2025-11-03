@@ -78,3 +78,8 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
         step 4: load the stack pointer register with reasonable value that can be reachable by CPU, and return function using jal (jump and link), make sure to use si instead of ni to jump inside c-asm_4.c instructions in gdb. 
                 [make Project4 -> make startqemu -> make connectgdb]
 
+### project_5: exploring size of data types
+
+        Step 1: create c-asm_5.c, make assembly to see how it is assigning size of different data types (char,int,float). [make Project5]
+
+        Step 2: floating and double word can be converted from dec to binary. Thus from there we can see how encoding scheme works in that 
