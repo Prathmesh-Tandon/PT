@@ -82,4 +82,9 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 
         Step 1: create c-asm_5.c, make assembly to see how it is assigning size of different data types (char,int,float). [make Project5]
 
-        Step 2: floating and double word can be converted from dec to binary. Thus from there we can see how encoding scheme works in that 
+        Step 2: floating and double word can be converted from dec to binary. Thus from there we can see how encoding scheme works.
+
+        Step 3: use of const and volatile, create c-asm_5-1.c. define const int variable, and then use of volatile even afte 01 optimisation  then compile the c and asm file.
+        [make Project5] 
+
+        

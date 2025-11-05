@@ -11,8 +11,11 @@ Project4: c-asm_4.c m_4.s
 	riscv64-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_4.s c-asm_4.c -o main.elf
 	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 
-Project5: c-asm_5.c
+Project5: c-asm_5.c c-asm_5-1.c
 	riscv64-unknown-elf-gcc -O0 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld c-asm_5.c -S
+	riscv64-unknown-elf-gcc -O1 -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld c-asm_5-1.c -S
+	riscv64-unknown-elf-gcc -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tm.ld m_4.s c-asm_5-1.c -o main.elf
+	riscv64-unknown-elf-objcopy -O binary main.elf main.bin
 
 printbinary: main.bin
 	xxd -e -c 4 -g 4 main.bin
