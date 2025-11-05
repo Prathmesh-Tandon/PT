@@ -89,7 +89,8 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 
 ### project_6: native compiling ( gcc ) forward
 
-        Step 1: use of typedef and sizeof() keywords in project6.c
+        Step 1: use of typedef and sizeof() keywords in project6.c.
+        Step 2: use of struct & union in project6.c.
 
 
         
