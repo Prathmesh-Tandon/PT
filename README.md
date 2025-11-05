@@ -85,6 +85,11 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
         Step 2: floating and double word can be converted from dec to binary. Thus from there we can see how encoding scheme works.
 
         Step 3: use of const and volatile, create c-asm_5-1.c. define const int variable, and then use of volatile even afte 01 optimisation  then compile the c and asm file.
-        [make Project5] 
+        [make Project5]
+
+### project_6: native compiling ( gcc ) forward
+
+        Step 1: use of typedef and sizeof() keywords in project6.c
+
 
         
