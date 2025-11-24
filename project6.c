@@ -1,5 +1,6 @@
 #include <stdio.h>
 typedef char int8_t;
+
 struct pixel_t{
         unsigned char r;
         unsigned char g;
@@ -13,7 +14,7 @@ union pixel_t_1{
 void main(){
     int8_t g = 8;
     int size = sizeof(g);
-    printf("%ld\n", sizeof(size));
+    printf("%ld\n%ld\n", sizeof(size), sizeof(g));
     struct pixel_t p;
     printf("%ld\n", sizeof(p));
     union pixel_t_1 f;
