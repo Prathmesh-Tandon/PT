@@ -94,6 +94,6 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 
 ### project_7: branching at assembly level
         
-        step 1: create project7.c , use if else, do while,  goto effects at assembly level
+        step 1: create project7.c , use if else, switch case effects at assembly level
         step 2: create assembly, run qemu, check via gdb.
         
