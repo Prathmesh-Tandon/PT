@@ -96,4 +96,9 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
         
         step 1: create project7.c , use if else, switch case effects at assembly level
         step 2: create assembly, run qemu, check via gdb.
+
+### project_8: looping at asm, storage classes/duration using local gcc instead of riscV toolchain
+
+        Step 1: create project8.c, use do while and update make automation
+        Step 2: create project8_1.c, use local gcc ,due to usage of printf for auto (prooving auto is local to fn)
         
