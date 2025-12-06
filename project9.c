@@ -1,6 +1,13 @@
 #include<stdio.h>
 
-void main(){
+void foo();
+
+void foo (){
+    printf("Hello World nth time\n");
     int a = 10;
-    printf("%d\n", a);
+    printf("%ld\n", sizeof(a));
+}
+void main(){
+foo();
+return;
 }

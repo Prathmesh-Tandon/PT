@@ -105,3 +105,4 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 ### project_9: variables and functions, cross compiling, local gcc.
         Step 1: create freestanding where all projects till 8 moved.
         Step 2: create project9.c
+        Step 3: implement calculator, project10.c
