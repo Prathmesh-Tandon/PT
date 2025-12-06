@@ -102,3 +102,6 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
         Step 1: create project8.c, use do while and update make automation
         Step 2: create project8_1.c, use local gcc ,due to usage of printf for auto (prooving auto is local to fn)
         
+### project_9: variables and functions, cross compiling, local gcc.
+        Step 1: create freestanding where all projects till 8 moved.
+        Step 2: create project9.c
