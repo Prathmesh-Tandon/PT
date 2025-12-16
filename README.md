@@ -111,5 +111,6 @@ basic cmds: git reset --hard, git pull --rebase ( to pull latest changes)
 
 ### project_11: arrays
         step 1: create project11.c.
-        step 2: debug using gdb, gcc -ggdb project11.c , gdb a.out
-        step 3: inside gdb terminal, press c for continue or r for run , then type break at main, gdb will open, then n or ni for next instructions
+        step 2: debug using gdb, gcc -ggdb or -g project11.c then gdb a.out
+        step 3: inside gdb terminal, press c for continue or r for run , then type break at main, gdb will open, then n or ni for next instructions.
+        step 4: arrays, open gdb , inside gdb if print use p[index]
